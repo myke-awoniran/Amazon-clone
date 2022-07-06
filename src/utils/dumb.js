@@ -1,0 +1,5 @@
+function dumbUser(user) {
+    return {
+        
+    }
+}
