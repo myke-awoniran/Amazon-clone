@@ -16,12 +16,9 @@ app.use(morgan('combined'))
 
 app.get('/', Home.HomeController)
 
-// app.use('*', (req, res) => {
-//     return res.status(200).json({
-//         status: 'fail',
-//         message:
-//     })
-// })
+app.use('*', Home.UndefinedRoutes)
 
 app.use(ErrorHandler)
+
+
 module.exports=app
